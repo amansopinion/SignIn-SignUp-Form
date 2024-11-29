@@ -1,45 +1,82 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In / Sign Up</title>
-    <link rel="stylesheet" href="style.css"> 
+    <!--Link to Font Awesome CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>SignIn-SignUp-Form</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="form-container sign-in-container">
-            <form id="signInForm">
-                <h1>Sign In</h1>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Sign In</button>
+    <div class="form-container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                <!--For User Input-->
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username or Email" required>
+                </div>
+                <!--For Password Input-->
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <!--For Submit Button-->
+                <button type="submit" value="Login" class="btn">Sign In</button>
+                <p class="social-text">Or Sign In with social media</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </form>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign Up</h2>
+                <!--For User Input-->
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <!--For Password Input-->
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <!--For Submit Button-->
+                <button type="submit" value="Sign up" class="btn">Sign Up</button>
+                <p class="social-text">Or Sign Up with social media</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </form>
         </div>
-        <div class="form-container sign-up-container">
-            <form id="signUpForm">
-                <h1>Sign Up</h1>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Already have an account? SIGN IN!</p>
-                    <button id="signInBtn" class="ghost">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend</h1>
-                    <p>Don't have an account? SIGN UP!</p>
-                    <button id="signUpBtn" class="ghost"> Sign Up</button>
-                </div>
-            </div>
-        </div>
+        <div class="panels-container"></div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
